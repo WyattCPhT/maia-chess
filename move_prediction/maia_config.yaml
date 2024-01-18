@@ -3,17 +3,17 @@
 gpu: 0
 
 dataset:
-  input_train: 'PATH_TO_TRAINING_FILES' # This uses glob so training/*/* is probably the end
-  input_test: 'PATH_TO_VAL_FILES' # This uses glob so validate/*/* is probably the end
+  input_train: /workspaces/maia-chess/supervised-0 # This uses glob so training/*/* is probably the end
+  input_test: /workspaces/maia-chess/supervised-0 # This uses glob so validate/*/* is probably the end
 
 training:
     precision: 'half'
     batch_size: 1024
     num_batch_splits: 1
-    test_steps: 2000
+    test_steps: 1
     train_avg_report_steps: 50
-    total_steps: 400000
-    checkpoint_steps: 10000
+    total_steps: 100
+    checkpoint_steps: 10
     shuffle_size: 250000
     lr_values:
         - 0.1
