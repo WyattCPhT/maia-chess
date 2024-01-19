@@ -10,8 +10,8 @@ training:
     precision: 'half'
     batch_size: 1024
     num_batch_splits: 1
-    test_steps: 1
-    train_avg_report_steps: 50
+    test_steps: 100
+    train_avg_report_steps: 1
     total_steps: 100
     checkpoint_steps: 10
     shuffle_size: 250000
